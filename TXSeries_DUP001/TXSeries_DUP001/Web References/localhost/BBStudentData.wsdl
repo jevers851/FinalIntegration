@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getStudentID">
+        <s:complexType />
+      </s:element>
+      <s:element name="getStudentIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getStudentIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setStudentID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setStudentIDResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getFirstName">
+        <s:complexType />
+      </s:element>
+      <s:element name="getFirstNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFirstNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setFirstName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setFirstNameResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getLastName">
+        <s:complexType />
+      </s:element>
+      <s:element name="getLastNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLastNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getEmail">
+        <s:complexType />
+      </s:element>
+      <s:element name="getEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getEmailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setLastName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ln" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setLastNameResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getDOB">
+        <s:complexType />
+      </s:element>
+      <s:element name="getDOBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDOBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setDOB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="birth" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setDOBResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getGPA">
+        <s:complexType />
+      </s:element>
+      <s:element name="getGPAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getGPAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setGPA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="grade" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setGPAResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMajorCode">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMajorCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMajorCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setMajorCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setMajorCodeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getAddDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="getAddDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAddDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setAddDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ad" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setAddDateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getChangeDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="getChangeDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getChangeDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setChangeDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setChangeDateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getChangeTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="getChangeTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getChangeTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setChangeTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ct" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setChangeTimeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="setEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="e" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setEmailResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getStudentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:getStudentID" />
+  </wsdl:message>
+  <wsdl:message name="getStudentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:getStudentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="setStudentIDSoapIn">
+    <wsdl:part name="parameters" element="tns:setStudentID" />
+  </wsdl:message>
+  <wsdl:message name="setStudentIDSoapOut">
+    <wsdl:part name="parameters" element="tns:setStudentIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFirstNameSoapIn">
+    <wsdl:part name="parameters" element="tns:getFirstName" />
+  </wsdl:message>
+  <wsdl:message name="getFirstNameSoapOut">
+    <wsdl:part name="parameters" element="tns:getFirstNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="setFirstNameSoapIn">
+    <wsdl:part name="parameters" element="tns:setFirstName" />
+  </wsdl:message>
+  <wsdl:message name="setFirstNameSoapOut">
+    <wsdl:part name="parameters" element="tns:setFirstNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLastNameSoapIn">
+    <wsdl:part name="parameters" element="tns:getLastName" />
+  </wsdl:message>
+  <wsdl:message name="getLastNameSoapOut">
+    <wsdl:part name="parameters" element="tns:getLastNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="getEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:getEmail" />
+  </wsdl:message>
+  <wsdl:message name="getEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:getEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="setLastNameSoapIn">
+    <wsdl:part name="parameters" element="tns:setLastName" />
+  </wsdl:message>
+  <wsdl:message name="setLastNameSoapOut">
+    <wsdl:part name="parameters" element="tns:setLastNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDOBSoapIn">
+    <wsdl:part name="parameters" element="tns:getDOB" />
+  </wsdl:message>
+  <wsdl:message name="getDOBSoapOut">
+    <wsdl:part name="parameters" element="tns:getDOBResponse" />
+  </wsdl:message>
+  <wsdl:message name="setDOBSoapIn">
+    <wsdl:part name="parameters" element="tns:setDOB" />
+  </wsdl:message>
+  <wsdl:message name="setDOBSoapOut">
+    <wsdl:part name="parameters" element="tns:setDOBResponse" />
+  </wsdl:message>
+  <wsdl:message name="getGPASoapIn">
+    <wsdl:part name="parameters" element="tns:getGPA" />
+  </wsdl:message>
+  <wsdl:message name="getGPASoapOut">
+    <wsdl:part name="parameters" element="tns:getGPAResponse" />
+  </wsdl:message>
+  <wsdl:message name="setGPASoapIn">
+    <wsdl:part name="parameters" element="tns:setGPA" />
+  </wsdl:message>
+  <wsdl:message name="setGPASoapOut">
+    <wsdl:part name="parameters" element="tns:setGPAResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMajorCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:getMajorCode" />
+  </wsdl:message>
+  <wsdl:message name="getMajorCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:getMajorCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="setMajorCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:setMajorCode" />
+  </wsdl:message>
+  <wsdl:message name="setMajorCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:setMajorCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAddDateSoapIn">
+    <wsdl:part name="parameters" element="tns:getAddDate" />
+  </wsdl:message>
+  <wsdl:message name="getAddDateSoapOut">
+    <wsdl:part name="parameters" element="tns:getAddDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="setAddDateSoapIn">
+    <wsdl:part name="parameters" element="tns:setAddDate" />
+  </wsdl:message>
+  <wsdl:message name="setAddDateSoapOut">
+    <wsdl:part name="parameters" element="tns:setAddDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="getChangeDateSoapIn">
+    <wsdl:part name="parameters" element="tns:getChangeDate" />
+  </wsdl:message>
+  <wsdl:message name="getChangeDateSoapOut">
+    <wsdl:part name="parameters" element="tns:getChangeDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="setChangeDateSoapIn">
+    <wsdl:part name="parameters" element="tns:setChangeDate" />
+  </wsdl:message>
+  <wsdl:message name="setChangeDateSoapOut">
+    <wsdl:part name="parameters" element="tns:setChangeDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="getChangeTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:getChangeTime" />
+  </wsdl:message>
+  <wsdl:message name="getChangeTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:getChangeTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="setChangeTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:setChangeTime" />
+  </wsdl:message>
+  <wsdl:message name="setChangeTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:setChangeTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="setEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:setEmail" />
+  </wsdl:message>
+  <wsdl:message name="setEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:setEmailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BBStudentDataSoap">
+    <wsdl:operation name="getStudentID">
+      <wsdl:input message="tns:getStudentIDSoapIn" />
+      <wsdl:output message="tns:getStudentIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setStudentID">
+      <wsdl:input message="tns:setStudentIDSoapIn" />
+      <wsdl:output message="tns:setStudentIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFirstName">
+      <wsdl:input message="tns:getFirstNameSoapIn" />
+      <wsdl:output message="tns:getFirstNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setFirstName">
+      <wsdl:input message="tns:setFirstNameSoapIn" />
+      <wsdl:output message="tns:setFirstNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastName">
+      <wsdl:input message="tns:getLastNameSoapIn" />
+      <wsdl:output message="tns:getLastNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getEmail">
+      <wsdl:input message="tns:getEmailSoapIn" />
+      <wsdl:output message="tns:getEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setLastName">
+      <wsdl:input message="tns:setLastNameSoapIn" />
+      <wsdl:output message="tns:setLastNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDOB">
+      <wsdl:input message="tns:getDOBSoapIn" />
+      <wsdl:output message="tns:getDOBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setDOB">
+      <wsdl:input message="tns:setDOBSoapIn" />
+      <wsdl:output message="tns:setDOBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getGPA">
+      <wsdl:input message="tns:getGPASoapIn" />
+      <wsdl:output message="tns:getGPASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setGPA">
+      <wsdl:input message="tns:setGPASoapIn" />
+      <wsdl:output message="tns:setGPASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMajorCode">
+      <wsdl:input message="tns:getMajorCodeSoapIn" />
+      <wsdl:output message="tns:getMajorCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setMajorCode">
+      <wsdl:input message="tns:setMajorCodeSoapIn" />
+      <wsdl:output message="tns:setMajorCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAddDate">
+      <wsdl:input message="tns:getAddDateSoapIn" />
+      <wsdl:output message="tns:getAddDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setAddDate">
+      <wsdl:input message="tns:setAddDateSoapIn" />
+      <wsdl:output message="tns:setAddDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChangeDate">
+      <wsdl:input message="tns:getChangeDateSoapIn" />
+      <wsdl:output message="tns:getChangeDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setChangeDate">
+      <wsdl:input message="tns:setChangeDateSoapIn" />
+      <wsdl:output message="tns:setChangeDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChangeTime">
+      <wsdl:input message="tns:getChangeTimeSoapIn" />
+      <wsdl:output message="tns:getChangeTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setChangeTime">
+      <wsdl:input message="tns:setChangeTimeSoapIn" />
+      <wsdl:output message="tns:setChangeTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setEmail">
+      <wsdl:input message="tns:setEmailSoapIn" />
+      <wsdl:output message="tns:setEmailSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BBStudentDataSoap" type="tns:BBStudentDataSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getStudentID">
+      <soap:operation soapAction="http://tempuri.org/getStudentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setStudentID">
+      <soap:operation soapAction="http://tempuri.org/setStudentID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFirstName">
+      <soap:operation soapAction="http://tempuri.org/getFirstName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setFirstName">
+      <soap:operation soapAction="http://tempuri.org/setFirstName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastName">
+      <soap:operation soapAction="http://tempuri.org/getLastName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmail">
+      <soap:operation soapAction="http://tempuri.org/getEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setLastName">
+      <soap:operation soapAction="http://tempuri.org/setLastName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDOB">
+      <soap:operation soapAction="http://tempuri.org/getDOB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setDOB">
+      <soap:operation soapAction="http://tempuri.org/setDOB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGPA">
+      <soap:operation soapAction="http://tempuri.org/getGPA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGPA">
+      <soap:operation soapAction="http://tempuri.org/setGPA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMajorCode">
+      <soap:operation soapAction="http://tempuri.org/getMajorCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMajorCode">
+      <soap:operation soapAction="http://tempuri.org/setMajorCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAddDate">
+      <soap:operation soapAction="http://tempuri.org/getAddDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setAddDate">
+      <soap:operation soapAction="http://tempuri.org/setAddDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChangeDate">
+      <soap:operation soapAction="http://tempuri.org/getChangeDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setChangeDate">
+      <soap:operation soapAction="http://tempuri.org/setChangeDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChangeTime">
+      <soap:operation soapAction="http://tempuri.org/getChangeTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setChangeTime">
+      <soap:operation soapAction="http://tempuri.org/setChangeTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setEmail">
+      <soap:operation soapAction="http://tempuri.org/setEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BBStudentDataSoap12" type="tns:BBStudentDataSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getStudentID">
+      <soap12:operation soapAction="http://tempuri.org/getStudentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setStudentID">
+      <soap12:operation soapAction="http://tempuri.org/setStudentID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFirstName">
+      <soap12:operation soapAction="http://tempuri.org/getFirstName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setFirstName">
+      <soap12:operation soapAction="http://tempuri.org/setFirstName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastName">
+      <soap12:operation soapAction="http://tempuri.org/getLastName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmail">
+      <soap12:operation soapAction="http://tempuri.org/getEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setLastName">
+      <soap12:operation soapAction="http://tempuri.org/setLastName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDOB">
+      <soap12:operation soapAction="http://tempuri.org/getDOB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setDOB">
+      <soap12:operation soapAction="http://tempuri.org/setDOB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGPA">
+      <soap12:operation soapAction="http://tempuri.org/getGPA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGPA">
+      <soap12:operation soapAction="http://tempuri.org/setGPA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMajorCode">
+      <soap12:operation soapAction="http://tempuri.org/getMajorCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMajorCode">
+      <soap12:operation soapAction="http://tempuri.org/setMajorCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAddDate">
+      <soap12:operation soapAction="http://tempuri.org/getAddDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setAddDate">
+      <soap12:operation soapAction="http://tempuri.org/setAddDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChangeDate">
+      <soap12:operation soapAction="http://tempuri.org/getChangeDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setChangeDate">
+      <soap12:operation soapAction="http://tempuri.org/setChangeDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChangeTime">
+      <soap12:operation soapAction="http://tempuri.org/getChangeTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setChangeTime">
+      <soap12:operation soapAction="http://tempuri.org/setChangeTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setEmail">
+      <soap12:operation soapAction="http://tempuri.org/setEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BBStudentData">
+    <wsdl:port name="BBStudentDataSoap" binding="tns:BBStudentDataSoap">
+      <soap:address location="http://localhost:49722/BBStudentData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BBStudentDataSoap12" binding="tns:BBStudentDataSoap12">
+      <soap12:address location="http://localhost:49722/BBStudentData.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

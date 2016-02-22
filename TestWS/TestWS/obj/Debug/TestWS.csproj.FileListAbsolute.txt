@@ -1,0 +1,12 @@
+C:\Users\rwright\Documents\Visual Studio 2013\Projects\C#\TestWS\TestWS\bin\TestWS.dll.config
+C:\Users\rwright\Documents\Visual Studio 2013\Projects\C#\TestWS\TestWS\bin\TestWS.dll
+C:\Users\rwright\Documents\Visual Studio 2013\Projects\C#\TestWS\TestWS\bin\TestWS.pdb
+C:\Users\rwright\Documents\Visual Studio 2013\Projects\C#\TestWS\TestWS\obj\Debug\TestWS.csprojResolveAssemblyReference.cache
+C:\Users\rwright\Documents\Visual Studio 2013\Projects\C#\TestWS\TestWS\obj\Debug\TestWS.dll
+C:\Users\rwright\Documents\Visual Studio 2013\Projects\C#\TestWS\TestWS\obj\Debug\TestWS.pdb
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TestWS\TestWS\obj\Debug\TestWS.csprojResolveAssemblyReference.cache
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TestWS\TestWS\obj\Debug\TestWS.dll
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TestWS\TestWS\bin\TestWS.dll.config
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TestWS\TestWS\bin\TestWS.dll
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TestWS\TestWS\bin\TestWS.pdb
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TestWS\TestWS\obj\Debug\TestWS.pdb

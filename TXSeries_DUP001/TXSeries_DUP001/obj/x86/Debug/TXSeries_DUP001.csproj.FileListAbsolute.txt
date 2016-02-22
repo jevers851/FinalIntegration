@@ -1,0 +1,21 @@
+C:\Users\bkowalczk\Desktop\TXSeries_DUP001\TXSeries_DUP001\bin\Debug\TXSeries_DUP001.exe
+C:\Users\bkowalczk\Desktop\TXSeries_DUP001\TXSeries_DUP001\bin\Debug\TXSeries_DUP001.pdb
+C:\Users\bkowalczk\Desktop\TXSeries_DUP001\TXSeries_DUP001\bin\Debug\IBM.CTG.Client.dll
+C:\Users\bkowalczk\Desktop\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.csprojResolveAssemblyReference.cache
+C:\Users\bkowalczk\Desktop\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.Properties.Resources.resources
+C:\Users\bkowalczk\Desktop\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.csproj.GenerateResource.Cache
+C:\Users\bkowalczk\Desktop\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.exe
+C:\Users\bkowalczk\Desktop\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.pdb
+C:\Users\bkowalczk\Desktop\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.frmMain.resources
+C:\Users\rwright\Desktop\CISP-410_BK\Other\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.exe
+C:\Users\rwright\Desktop\CISP-410_BK\Other\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.pdb
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.exe
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.pdb
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TXSeries_DUP001\TXSeries_DUP001\bin\Debug\TXSeries_DUP001.exe
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TXSeries_DUP001\TXSeries_DUP001\bin\Debug\TXSeries_DUP001.pdb
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TXSeries_DUP001\TXSeries_DUP001\bin\Debug\IBM.CTG.Client.dll
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.csprojResolveAssemblyReference.cache
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.frmMain.resources
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.Properties.Resources.resources
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TXSeries_DUP001\TXSeries_DUP001\obj\x86\Debug\TXSeries_DUP001.csproj.GenerateResource.Cache
+C:\Users\rwright\Desktop\CISP-410_BK\Final Integration\TXSeries_DUP001\TXSeries_DUP001\bin\Debug\TXSeries_DUP001.exe.config
